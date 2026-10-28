@@ -1,1 +1,211 @@
-<!-- ATS-compliant single-column HTML CV template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ header.name }} — {{ target_role_title }}</title>
+    <style>
+        /* ATS-compliant: single-column, no tables, no images, no columns */
+        @page {
+            size: A4;
+            margin: 1.5cm 2cm;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.45;
+            color: #1a1a1a;
+        }
+
+        /* ── Header ── */
+        .header {
+            text-align: center;
+            margin-bottom: 10pt;
+            border-bottom: 1.5pt solid #1a1a1a;
+            padding-bottom: 8pt;
+        }
+        .header h1 {
+            font-size: 18pt;
+            font-weight: 700;
+            letter-spacing: 0.5pt;
+            margin-bottom: 3pt;
+        }
+        .header .subtitle {
+            font-size: 11pt;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 5pt;
+        }
+        .header .contact {
+            font-size: 9pt;
+            color: #444;
+        }
+        .header .contact a {
+            color: #444;
+            text-decoration: none;
+        }
+
+        /* ── Section ── */
+        .section {
+            margin-bottom: 10pt;
+        }
+        .section h2 {
+            font-size: 11pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8pt;
+            border-bottom: 0.75pt solid #999;
+            padding-bottom: 2pt;
+            margin-bottom: 6pt;
+            color: #1a1a1a;
+        }
+
+        /* ── Experience / Project entries ── */
+        .entry {
+            margin-bottom: 8pt;
+        }
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .entry-header .left {
+            font-weight: 700;
+            font-size: 10pt;
+        }
+        .entry-header .right {
+            font-size: 9pt;
+            color: #555;
+            text-align: right;
+        }
+        .entry-role {
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #333;
+            margin-bottom: 3pt;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 18pt;
+        }
+        li {
+            margin-bottom: 2pt;
+            font-size: 9.5pt;
+        }
+
+        /* ── Skills ── */
+        .skills-row {
+            margin-bottom: 3pt;
+            font-size: 9.5pt;
+        }
+        .skills-row strong {
+            font-size: 9.5pt;
+        }
+
+        /* ── Education / Certifications ── */
+        .edu-line {
+            font-size: 9.5pt;
+            margin-bottom: 2pt;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>{{ header.name }}</h1>
+        <div class="subtitle">{{ target_role_title }}</div>
+        <div class="contact">
+            {{ header.location }} &nbsp;|&nbsp;
+            {{ header.phone }} &nbsp;|&nbsp;
+            <a href="mailto:{{ header.email }}">{{ header.email }}</a> &nbsp;|&nbsp;
+            <a href="https://linkedin.com/{{ header.linkedin }}">LinkedIn</a> &nbsp;|&nbsp;
+            <a href="https://github.com/{{ header.github }}">GitHub</a>
+        </div>
+    </div>
+
+    <!-- Executive Summary -->
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <p style="font-size: 9.5pt;">{{ executive_summary }}</p>
+    </div>
+
+    <!-- Skills -->
+    {% if prioritized_skill_categories %}
+    <div class="section">
+        <h2>Technical Skills</h2>
+        {% for cat in prioritized_skill_categories %}
+        <div class="skills-row">
+            <strong>{{ cat.name }}:</strong> {{ cat.skills | join(', ') }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Experience -->
+    {% if experiences %}
+    <div class="section">
+        <h2>Professional Experience</h2>
+        {% for exp in experiences %}
+        <div class="entry">
+            <div class="entry-header">
+                <span class="left">{{ exp.company }}</span>
+                <span class="right">{{ exp.period }}</span>
+            </div>
+            <div class="entry-role">{{ exp.role }} — {{ exp.location }}</div>
+            <ul>
+                {% for bullet in exp.bullets %}
+                <li>{{ bullet.tailored_text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Projects -->
+    {% if projects %}
+    <div class="section">
+        <h2>Key Projects</h2>
+        {% for proj in projects %}
+        <div class="entry">
+            <div class="entry-header">
+                <span class="left">{{ proj.name }}</span>
+                <span class="right">{{ proj.technologies | join(', ') }}</span>
+            </div>
+            <ul>
+                {% for bullet in proj.bullets %}
+                <li>{{ bullet.tailored_text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Education -->
+    {% if education %}
+    <div class="section">
+        <h2>Education</h2>
+        <div class="edu-line">
+            <strong>{{ education.degree }}</strong> — {{ education.institution }} ({{ education.period }})
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Certifications -->
+    {% if certifications %}
+    <div class="section">
+        <h2>Certifications</h2>
+        {% for cert in certifications %}
+        <div class="edu-line">{{ cert.name }} — {{ cert.issuer }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+</body>
+</html>

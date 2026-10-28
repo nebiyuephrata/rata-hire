@@ -1,1 +1,104 @@
-<!-- ATS-compliant HTML Cover Letter template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cover Letter — {{ header.name }} for {{ target_role_title }} at {{ company }}</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2.5cm 2.5cm;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+
+        /* ── Header ── */
+        .cl-header {
+            margin-bottom: 24pt;
+        }
+        .cl-header .name {
+            font-size: 16pt;
+            font-weight: 700;
+            margin-bottom: 2pt;
+        }
+        .cl-header .contact {
+            font-size: 9pt;
+            color: #444;
+        }
+        .cl-header .contact a {
+            color: #444;
+            text-decoration: none;
+        }
+
+        /* ── Date & Addressee ── */
+        .date-line {
+            margin-bottom: 16pt;
+            font-size: 10pt;
+            color: #555;
+        }
+        .addressee {
+            margin-bottom: 16pt;
+            font-size: 10.5pt;
+        }
+
+        /* ── Body ── */
+        .cl-body p {
+            margin-bottom: 12pt;
+            text-align: justify;
+        }
+
+        /* ── Closing ── */
+        .closing {
+            margin-top: 20pt;
+        }
+        .closing .regards {
+            margin-bottom: 24pt;
+        }
+        .closing .signature {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="cl-header">
+        <div class="name">{{ header.name }}</div>
+        <div class="contact">
+            {{ header.location }} &nbsp;|&nbsp;
+            {{ header.phone }} &nbsp;|&nbsp;
+            <a href="mailto:{{ header.email }}">{{ header.email }}</a> &nbsp;|&nbsp;
+            <a href="https://linkedin.com/{{ header.linkedin }}">LinkedIn</a> &nbsp;|&nbsp;
+            <a href="https://github.com/{{ header.github }}">GitHub</a>
+        </div>
+    </div>
+
+    <!-- Date -->
+    <div class="date-line">{{ date }}</div>
+
+    <!-- Addressee -->
+    <div class="addressee">
+        Re: {{ target_role_title }} at {{ company }}
+    </div>
+
+    <!-- Body (rendered from cover_letter_markdown) -->
+    <div class="cl-body">
+        {{ cover_letter_html }}
+    </div>
+
+    <!-- Closing -->
+    <div class="closing">
+        <div class="regards">Sincerely,</div>
+        <div class="signature">{{ header.name }}</div>
+    </div>
+
+</body>
+</html>
