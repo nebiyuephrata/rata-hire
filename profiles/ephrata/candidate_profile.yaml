@@ -1,0 +1,41 @@
+# Target roles, salary floor, timezone, and geo rules
+profile_id: "ephrata"
+full_name: "Ephrata Nebiyu"
+legal_name: "Ephrata Nebiyu"
+email: "nebiyuephrata@gmail.com"
+phone: "+251 93 103 8080"
+location:
+  city: "Addis Ababa"
+  country: "Ethiopia"
+  timezone: "UTC+3"
+  region_tags:
+    - "Worldwide"
+    - "Global"
+    - "Anywhere"
+    - "EMEA"
+    - "Africa"
+    - "CET +/- 3"
+    - "UTC+3"
+  disallowed_restrictions:
+    - "US Citizens Only"
+    - "Must reside in the United States"
+    - "W2 Only (US)"
+    - "Security Clearance Required"
+    - "EU Citizenship Required (No B2B Contractor)"
+
+preferences:
+  min_salary_usd_annual: 60000
+  min_hourly_rate_usd: 35
+  min_courtroom_score_to_tailor: 75
+  employment_types:
+    - "Full-time"
+    - "Contract"
+    - "B2B Contractor"
+  target_titles:
+    - "AI Engineer"
+    - "Senior AI Systems Engineer"
+    - "AI Agent Engineer"
+    - "LLM Evaluation Engineer"
+    - "Forward Deployed Engineer"
+    - "Senior Backend & Distributed Systems Engineer"
+    - "AI Platform Engineer"

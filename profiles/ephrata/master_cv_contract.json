@@ -1,0 +1,499 @@
+{
+  "schema_version": "1.0.0",
+  "candidate_id": "ephrata",
+  "header": {
+    "name": "Ephrata Nebiyu",
+    "default_title": "Senior AI Systems & Distributed Platform Engineer",
+    "location": "Addis Ababa, Ethiopia",
+    "phone": "+251 93 103 8080",
+    "email": "nebiyuephrata@gmail.com",
+    "linkedin": "in/ephrata-nebiyu-9344b1205",
+    "github": "nebiyuephrata"
+  },
+  "core_facts": {
+    "years_of_experience": "5+",
+    "max_user_scale": "2.3 million+ active users",
+    "trp_percentile": "Top 3% of global applicants",
+    "trp_hours": "720+ hours"
+  },
+  "skill_categories": [
+    {
+      "category_id": "SKILL_AI_AGENTS",
+      "name": "AI Agent Engineering & Protocols",
+      "skills": [
+        "LangGraph",
+        "Model Context Protocol (MCP)",
+        "Multi-Agent Orchestration",
+        "ReAct Agents",
+        "Hierarchical State Graphs",
+        "Parallel Agent Orchestration",
+        "Conflict Resolution Synthesis",
+        "Layered Context Engineering",
+        "Sandboxed Tool Execution",
+        "Playwright Web Automation"
+      ]
+    },
+    {
+      "category_id": "SKILL_LLM_EVAL",
+      "name": "LLM Evaluation & Fine-Tuning",
+      "skills": [
+        "Evaluation Harness Design (DataAgentBench, tau-2-Bench)",
+        "LLM-as-a-Judge",
+        "Critic Calibration",
+        "PEFT / LoRA Fine-Tuning",
+        "Preference Tuning (DPO, SimPO, ORPO)",
+        "Unsloth",
+        "Hugging Face",
+        "Synthetic Dataset Generation",
+        "Langfuse",
+        "LangSmith"
+      ]
+    },
+    {
+      "category_id": "SKILL_DOC_CODE",
+      "name": "Document Intelligence & Codebase Archaeology",
+      "skills": [
+        "RAG & Semantic Chunking",
+        "Bounding-Box Provenance",
+        "Multi-Strategy OCR Routing",
+        "Docling",
+        "Marker",
+        "MinerU",
+        "PyMuPDF",
+        "pdfplumber",
+        "Multi-Language AST Parsing (tree-sitter, sqlglot)",
+        "NetworkX",
+        "PageRank"
+      ]
+    },
+    {
+      "category_id": "SKILL_LANGUAGES",
+      "name": "Programming Languages",
+      "skills": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "C#",
+        "SQL",
+        "Java"
+      ]
+    },
+    {
+      "category_id": "SKILL_DISTRIBUTED",
+      "name": "Distributed Architecture & Streaming",
+      "skills": [
+        "Event-Driven Microservices",
+        "Apache Kafka",
+        "CQRS",
+        "Event Sourcing",
+        "Server-Sent Events (SSE) Streaming",
+        "Offline-First Data Sync",
+        "Serverless Computing",
+        "High-Concurrency Systems"
+      ]
+    },
+    {
+      "category_id": "SKILL_BACKEND_CLOUD",
+      "name": "Backend Frameworks, Databases & Cloud",
+      "skills": [
+        "FastAPI",
+        "Pydantic",
+        "Node.js",
+        "NestJS",
+        "Express.js",
+        "ASP.NET",
+        "RESTful APIs",
+        "GraphQL",
+        "FHIR Interoperability",
+        "PostgreSQL",
+        "DuckDB",
+        "MongoDB",
+        "SQLite",
+        "MySQL",
+        "SQL Server",
+        "AWS (Lambda, API Gateway, S3)",
+        "GCP",
+        "Docker",
+        "Kubernetes",
+        "CI/CD"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "exp_id": "EXP_MERQ_2026",
+      "company": "MERQ Consultancy PLC",
+      "role": "Full Stack & AI Systems Engineer (Zero Dose Project)",
+      "period": "May 2026 – Jul 2026",
+      "location": "Addis Ababa, Ethiopia",
+      "bullets": [
+        {
+          "fact_id": "EXP_MERQ_B1",
+          "text": "Engineered a mission-critical health intelligence platform featuring machine learning risk-scoring algorithms and predictive pipelines to identify immunization dropout risks and optimize field schedules.",
+          "tags": [
+            "ML",
+            "Predictive Pipelines",
+            "Healthcare",
+            "Python"
+          ]
+        },
+        {
+          "fact_id": "EXP_MERQ_B2",
+          "text": "Architected scalable backend services with offline-first client-server synchronization, role-based access control (RBAC), and real-time analytics dashboards.",
+          "tags": [
+            "Distributed Systems",
+            "Offline Sync",
+            "RBAC",
+            "Backend"
+          ]
+        },
+        {
+          "fact_id": "EXP_MERQ_B3",
+          "text": "Built standards-compliant healthcare interoperability APIs (FHIR, DHIS2, eCHIS, Master Facility Registry) and automated multi-language notification pipelines across SMS and USSD gateways.",
+          "tags": [
+            "APIs",
+            "FHIR",
+            "Interoperability",
+            "Notifications"
+          ]
+        }
+      ]
+    },
+    {
+      "exp_id": "EXP_10ACADEMY_2026",
+      "company": "Tenacious Intelligence Corporation (10 Academy)",
+      "role": "AI Agent, Evaluation & Forward Deployed Engineer (TRP Fellow)",
+      "period": "Feb 2026 – May 2026",
+      "location": "Remote",
+      "bullets": [
+        {
+          "fact_id": "EXP_TRP_B1",
+          "text": "Selected among the top 3% of global applicants for an intensive 720+ hour (60+ hrs/week) fellowship delivering 9 production-grade AI engineering systems across the full AI Development Lifecycle (AI-DLC).",
+          "tags": [
+            "AI Engineering",
+            "Forward Deployed",
+            "AI-DLC"
+          ]
+        },
+        {
+          "fact_id": "EXP_TRP_B2",
+          "text": "Engineered multi-agent systems utilizing LangGraph, Model Context Protocol (MCP), hierarchical state graphs, and parallel conflict-resolution synthesis with full observability via Langfuse and LangSmith.",
+          "tags": [
+            "LangGraph",
+            "MCP",
+            "Multi-Agent",
+            "Langfuse",
+            "LangSmith"
+          ]
+        },
+        {
+          "fact_id": "EXP_TRP_B3",
+          "text": "Designed automated evaluation harnesses (DataAgentBench, tau-2-Bench), calibrated LLM-as-a-judge critics, and executed parameter-efficient fine-tuning (PEFT/LoRA) and preference optimization (DPO, SimPO, ORPO) using Unsloth and Hugging Face.",
+          "tags": [
+            "LLM Evaluation",
+            "PEFT",
+            "LoRA",
+            "DPO",
+            "Hugging Face"
+          ]
+        },
+        {
+          "fact_id": "EXP_TRP_B4",
+          "text": "Built advanced document intelligence pipelines (Docling, Marker, MinerU, bounding-box provenance) and codebase archaeology systems utilizing tree-sitter, sqlglot, and NetworkX dependency graphs for blast-radius analysis.",
+          "tags": [
+            "RAG",
+            "OCR",
+            "Docling",
+            "AST",
+            "tree-sitter",
+            "NetworkX"
+          ]
+        }
+      ]
+    },
+    {
+      "exp_id": "EXP_ADDIS_2025",
+      "company": "Addis Systems",
+      "role": "Lead Backend & Platform Engineer",
+      "period": "Feb 2025 – Sept 2025",
+      "location": "Addis Ababa, Ethiopia",
+      "bullets": [
+        {
+          "fact_id": "EXP_ADDIS_B1",
+          "text": "Led the architecture of high-availability, event-driven microservices handling asynchronous inventory, real-time analytics, and reporting workflows using Node.js and Apache Kafka.",
+          "tags": [
+            "Kafka",
+            "Node.js",
+            "Microservices",
+            "Event-Driven"
+          ]
+        },
+        {
+          "fact_id": "EXP_ADDIS_B2",
+          "text": "Designed fault-tolerant inter-service communication protocols and distributed transactional workflows across Account, Product, and Sales domains.",
+          "tags": [
+            "Distributed Transactions",
+            "Architecture",
+            "Reliability"
+          ]
+        },
+        {
+          "fact_id": "EXP_ADDIS_B3",
+          "text": "Established engineering reliability standards, schema validation layers, service isolation, and horizontal scaling strategies across cross-functional engineering teams.",
+          "tags": [
+            "Leadership",
+            "Schema Validation",
+            "Scalability"
+          ]
+        }
+      ]
+    },
+    {
+      "exp_id": "EXP_IWORK_2022",
+      "company": "IWork Technologies",
+      "role": "Backend Engineer (Banking Systems)",
+      "period": "Feb 2022 – Dec 2022",
+      "location": "Remote",
+      "bullets": [
+        {
+          "fact_id": "EXP_IWORK_B1",
+          "text": "Engineered secure, high-compliance financial REST APIs and card lifecycle services supporting debit and credit card issuance for a US-based banking platform.",
+          "tags": [
+            "Fintech",
+            "Banking",
+            "REST APIs",
+            "Security"
+          ]
+        },
+        {
+          "fact_id": "EXP_IWORK_B2",
+          "text": "Refactored legacy transaction processing services to improve scalability, idempotency, operational security, and automated regression validation.",
+          "tags": [
+            "Refactoring",
+            "Testing",
+            "Transactions"
+          ]
+        }
+      ]
+    },
+    {
+      "exp_id": "EXP_MONETA_2021",
+      "company": "Moneta Technologies",
+      "role": "Backend Systems Engineer",
+      "period": "Jun 2021 – May 2022",
+      "location": "Addis Ababa, Ethiopia",
+      "bullets": [
+        {
+          "fact_id": "EXP_MONETA_B1",
+          "text": "Led core backend development for a high-scale conversational Telegram chatbot platform serving over 2.3 million active users.",
+          "tags": [
+            "High Scale",
+            "Telegram",
+            "Backend Leadership"
+          ]
+        },
+        {
+          "fact_id": "EXP_MONETA_B2",
+          "text": "Built elastic serverless infrastructure using AWS Lambda and API Gateway to handle massive concurrent real-time user interactions and payment workflows.",
+          "tags": [
+            "AWS Lambda",
+            "Serverless",
+            "API Gateway",
+            "Payments"
+          ]
+        },
+        {
+          "fact_id": "EXP_MONETA_B3",
+          "text": "Optimized system responsiveness and throughput via distributed caching strategies, asynchronous queue processing, and workload balancing.",
+          "tags": [
+            "Caching",
+            "Async Processing",
+            "Performance"
+          ]
+        }
+      ]
+    },
+    {
+      "exp_id": "EXP_FREELANCE_2019",
+      "company": "Freelance & B.A.B IT Solutions",
+      "role": "Backend & Enterprise Systems Engineer",
+      "period": "Jan 2019 – Jun 2021",
+      "location": "Remote",
+      "bullets": [
+        {
+          "fact_id": "EXP_FREE_B1",
+          "text": "Designed and delivered transactional enterprise APIs, financial data pipelines, and Stripe-integrated payment systems using Python, C#, ASP.NET, and SQL Server for international clients.",
+          "tags": [
+            "Python",
+            "C#",
+            "ASP.NET",
+            "Stripe",
+            "SQL Server"
+          ]
+        },
+        {
+          "fact_id": "EXP_FREE_B2",
+          "text": "Executed database schema optimization, query tuning, and caching improvements to guarantee high data integrity and sub-second reporting latencies.",
+          "tags": [
+            "Database Optimization",
+            "SQL",
+            "Performance"
+          ]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "proj_id": "PROJ_SIGNALFORGE",
+      "name": "SignalForge — LLM Evaluation & Multi-Agent Orchestration Platform",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "OpenAI APIs",
+        "Pydantic",
+        "AsyncIO",
+        "Multi-Agent Routing"
+      ],
+      "bullets": [
+        {
+          "fact_id": "PROJ_SF_B1",
+          "text": "Architected a deterministic AI orchestration platform for real-time intelligence enrichment, multi-agent routing, grounded generation, and automated evaluation."
+        },
+        {
+          "fact_id": "PROJ_SF_B2",
+          "text": "Engineered a 225-task zero-contamination benchmark suite to enforce evaluation integrity and reproducibility across model iterations."
+        },
+        {
+          "fact_id": "PROJ_SF_B3",
+          "text": "Improved held-out critic accuracy from 51.16% to 100.00% (+48.84 percentage points) through evaluation pipeline refinement and confidence calibration."
+        }
+      ]
+    },
+    {
+      "proj_id": "PROJ_DATA_AGENT",
+      "name": "data-analytics-agent — Autonomous Multi-Database ReAct Analytics Agent",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "ReAct Agents",
+        "sqlglot",
+        "DuckDB",
+        "PostgreSQL",
+        "MongoDB",
+        "SSE Streaming"
+      ],
+      "bullets": [
+        {
+          "fact_id": "PROJ_DA_B1",
+          "text": "Built a production-grade autonomous analytics agent capable of natural-language querying (Text-to-SQL), cross-DB entity resolution, iterative self-correction, and sandboxed code execution across PostgreSQL, MongoDB, DuckDB, and SQLite."
+        },
+        {
+          "fact_id": "PROJ_DA_B2",
+          "text": "Boosted benchmark mean score from 0.41 to 0.84 and increased task pass rate from 20% to 80% via evaluation-driven prompt and memory refinement."
+        },
+        {
+          "fact_id": "PROJ_DA_B3",
+          "text": "Contributed as part of Team Cohere (10 Academy TRP) to achieve a Top-10 global ranking on the public DataAgentBench leaderboard for real-world AI data systems."
+        }
+      ]
+    },
+    {
+      "proj_id": "PROJ_RATAZ_WORDZ",
+      "name": "rataz-Wordz — Document Intelligence & RAG Semantic Retrieval Platform",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Docling",
+        "Marker",
+        "OCR Pipelines",
+        "Semantic Vector Retrieval",
+        "SQLite"
+      ],
+      "bullets": [
+        {
+          "fact_id": "PROJ_RW_B1",
+          "text": "Developed a 5-stage document intelligence and RAG pipeline across 10 production API endpoints supporting multi-strategy OCR routing, semantic chunking, PageIndex navigation, and bounding-box provenance retrieval."
+        },
+        {
+          "fact_id": "PROJ_RW_B2",
+          "text": "Implemented deterministic fact extraction and audit-ready request tracing to ensure verifiable, hallucination-free retrieval."
+        }
+      ]
+    },
+    {
+      "proj_id": "PROJ_GOVERNANCE_COURTROOM",
+      "name": "Data Contract Enforcer & Automaton Auditor — AI Governance & Codebase Archaeology Systems",
+      "technologies": [
+        "Python",
+        "TypeScript",
+        "Node.js",
+        "Pydantic",
+        "tree-sitter",
+        "NetworkX",
+        "Multi-Agent Systems"
+      ],
+      "bullets": [
+        {
+          "fact_id": "PROJ_GC_B1",
+          "text": "Built a machine-checked data contract governance platform detecting schema drift and structural failures across distributed pipelines, achieving a 100/100 rubric score (21/21 validation checks passing)."
+        },
+        {
+          "fact_id": "PROJ_GC_B2",
+          "text": "Engineered a multi-agent digital courtroom and codebase archaeology pipeline combining parallel AST forensic analysis (tree-sitter), data lineage graphs (NetworkX), and deterministic arbitration across 6 audit APIs."
+        }
+      ]
+    },
+    {
+      "proj_id": "PROJ_APEXLEDGER",
+      "name": "apexLedger — Event-Sourced Financial & Agent Session Ledger",
+      "technologies": [
+        "Python",
+        "PostgreSQL",
+        "AsyncIO",
+        "CQRS",
+        "Event Sourcing",
+        "Projection Pipelines"
+      ],
+      "bullets": [
+        {
+          "fact_id": "PROJ_AL_B1",
+          "text": "Designed an append-only event-sourced ledger implementing CQRS and optimistic concurrency control to provide crash recovery and immutable audit trails for distributed agent sessions."
+        }
+      ]
+    }
+  ],
+  "education": {
+    "edu_id": "EDU_AASTU",
+    "degree": "BSc in Software Engineering",
+    "institution": "Addis Ababa Science and Technology University",
+    "period": "2015 – 2019"
+  },
+  "certifications": [
+    {
+      "cert_id": "CERT_TRP_2026",
+      "name": "AI Agent, AI Evaluation, and Forward Deployed Engineering Certificate (TRP Intensive — 720 Hours, Top 3% of Applicants)",
+      "issuer": "10 Academy / Tenacious Intelligence Corporation (May 2026)"
+    },
+    {
+      "cert_id": "CERT_IOT_2025",
+      "name": "IoT Automation & Robotics Certificate",
+      "issuer": "MIOT Development Center (2025)"
+    },
+    {
+      "cert_id": "CERT_GCLOUD",
+      "name": "Google Cloud Developer Scholarship Certificate",
+      "issuer": "Andela / Google Africa Developer Training Program"
+    },
+    {
+      "cert_id": "CERT_IBM_CYBER",
+      "name": "IBM Introduction to Cybersecurity Certificate",
+      "issuer": "IBM"
+    },
+    {
+      "cert_id": "CERT_AMOLE",
+      "name": "Amole Certified Developer — Systems Engineer Development Program",
+      "issuer": "Amole"
+    }
+  ]
+}

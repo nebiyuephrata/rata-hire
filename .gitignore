@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+profiles/*/artifacts/*
+!profiles/*/artifacts/.gitkeep
+*.db
+*.sqlite
+.pytest_cache/
+.qodo/

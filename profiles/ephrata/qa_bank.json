@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0.0",
+  "candidate_id": "ephrata",
+  "fields": [
+    {
+      "field_id": "QA_WORK_AUTH",
+      "question_patterns": [
+        "Are you legally authorized to work",
+        "Do you require visa sponsorship",
+        "Work authorization status",
+        "Are you authorized to work in"
+      ],
+      "answer": "I am based in Addis Ababa, Ethiopia and work as an international B2B contractor or via Employer of Record (EOR) platforms. I do not require US/EU visa sponsorship for remote roles.",
+      "short_answer": "Yes — B2B Contractor / EOR (no sponsorship needed for remote roles)"
+    },
+    {
+      "field_id": "QA_CONTRACTOR_EOR",
+      "question_patterns": [
+        "Are you open to contract work",
+        "B2B contractor",
+        "Employer of Record",
+        "EOR",
+        "Independent contractor",
+        "1099"
+      ],
+      "answer": "Yes, I am available as a B2B independent contractor and can also engage via Employer of Record (EOR) platforms such as Deel, Remote.com, or Oyster for full-time remote employment.",
+      "short_answer": "Yes — B2B / EOR (Deel, Remote, Oyster)"
+    },
+    {
+      "field_id": "QA_TIMEZONE",
+      "question_patterns": [
+        "What timezone are you in",
+        "timezone overlap",
+        "working hours",
+        "availability hours",
+        "What are your working hours",
+        "overlap with US",
+        "overlap with EU"
+      ],
+      "answer": "I am based in UTC+3 (East Africa Time). I have strong overlap with European business hours (CET/CEST) and maintain 4-6 hours of overlap with US Eastern time. I am flexible with asynchronous collaboration and can adjust core hours as needed.",
+      "short_answer": "UTC+3 — Full EU overlap, 4-6h US Eastern overlap, flexible async"
+    },
+    {
+      "field_id": "QA_NOTICE_PERIOD",
+      "question_patterns": [
+        "notice period",
+        "When can you start",
+        "start date",
+        "availability to start",
+        "earliest start date",
+        "How soon can you start"
+      ],
+      "answer": "I am available to start immediately or within 1-2 weeks depending on onboarding requirements.",
+      "short_answer": "Immediate — within 1-2 weeks"
+    },
+    {
+      "field_id": "QA_SALARY_EXPECTATION",
+      "question_patterns": [
+        "salary expectation",
+        "expected compensation",
+        "desired salary",
+        "pay expectations",
+        "compensation requirement",
+        "hourly rate"
+      ],
+      "answer": "My expected annual compensation is $60,000–$100,000 USD for full-time roles, or $35–$55 USD/hour for contract engagements, depending on scope, complexity, and benefits.",
+      "short_answer": "$60K–$100K/year (FTE) or $35–$55/hr (contract)"
+    },
+    {
+      "field_id": "QA_LINKEDIN",
+      "question_patterns": [
+        "LinkedIn",
+        "LinkedIn profile",
+        "LinkedIn URL"
+      ],
+      "answer": "https://www.linkedin.com/in/ephrata-nebiyu-9344b1205",
+      "short_answer": "https://www.linkedin.com/in/ephrata-nebiyu-9344b1205"
+    },
+    {
+      "field_id": "QA_GITHUB",
+      "question_patterns": [
+        "GitHub",
+        "GitHub profile",
+        "GitHub URL",
+        "code samples",
+        "portfolio"
+      ],
+      "answer": "https://github.com/nebiyuephrata",
+      "short_answer": "https://github.com/nebiyuephrata"
+    },
+    {
+      "field_id": "QA_WEBSITE",
+      "question_patterns": [
+        "personal website",
+        "portfolio URL",
+        "website"
+      ],
+      "answer": "https://github.com/nebiyuephrata",
+      "short_answer": "https://github.com/nebiyuephrata"
+    },
+    {
+      "field_id": "QA_LOCATION",
+      "question_patterns": [
+        "Where are you located",
+        "current location",
+        "city",
+        "country"
+      ],
+      "answer": "Addis Ababa, Ethiopia",
+      "short_answer": "Addis Ababa, Ethiopia"
+    },
+    {
+      "field_id": "QA_YEARS_EXPERIENCE",
+      "question_patterns": [
+        "years of experience",
+        "how many years",
+        "total experience"
+      ],
+      "answer": "5+ years of professional software engineering experience spanning backend systems, distributed architectures, and AI/ML engineering.",
+      "short_answer": "5+"
+    },
+    {
+      "field_id": "QA_EDUCATION",
+      "question_patterns": [
+        "highest degree",
+        "education",
+        "university",
+        "degree"
+      ],
+      "answer": "BSc in Software Engineering — Addis Ababa Science and Technology University (2015–2019)",
+      "short_answer": "BSc Software Engineering — AASTU"
+    },
+    {
+      "field_id": "QA_REFERRAL",
+      "question_patterns": [
+        "How did you hear about",
+        "referral",
+        "source",
+        "where did you find this job"
+      ],
+      "answer": "Online job board",
+      "short_answer": "Online job board"
+    },
+    {
+      "field_id": "QA_GENDER",
+      "question_patterns": [
+        "gender",
+        "gender identity"
+      ],
+      "answer": "Male",
+      "short_answer": "Male"
+    },
+    {
+      "field_id": "QA_RACE_ETHNICITY",
+      "question_patterns": [
+        "race",
+        "ethnicity"
+      ],
+      "answer": "Decline to self-identify",
+      "short_answer": "Decline to self-identify"
+    },
+    {
+      "field_id": "QA_VETERAN_STATUS",
+      "question_patterns": [
+        "veteran",
+        "military service"
+      ],
+      "answer": "I am not a protected veteran",
+      "short_answer": "No"
+    },
+    {
+      "field_id": "QA_DISABILITY",
+      "question_patterns": [
+        "disability",
+        "accommodation"
+      ],
+      "answer": "I do not have a disability",
+      "short_answer": "No"
+    }
+  ]
+}

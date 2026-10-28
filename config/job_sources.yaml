@@ -1,0 +1,58 @@
+
+# Global Catalog of Prioritized Remote Job Sources
+sources:
+  - id: "hiringcafe_ai"
+    name: "HiringCafe (AI & LLM Engineering)"
+    url: "https://hiringcafe.com/?searchQuery=AI%20Engineer&workplaceTypes=Remote"
+    ats_type: "aggregator_direct"
+    tier: 1
+    enabled: true
+
+  - id: "himalayas_ai"
+    name: "Himalayas (Remote AI/ML)"
+    url: "https://himalayas.app/jobs/ai-engineer"
+    ats_type: "himalayas"
+    tier: 1
+    enabled: true
+
+  - id: "yc_workatastartup"
+    name: "Y Combinator Work at a Startup"
+    url: "https://www.workatastartup.com/companies?query=AI&role=eng&usVisaNotRequired=true"
+    ats_type: "yc"
+    tier: 1
+    enabled: true
+
+  - id: "wellfound_ai"
+    name: "Wellfound (Remote AI Startups)"
+    url: "https://wellfound.com/role/r/artificial-intelligence-engineer"
+    ats_type: "wellfound"
+    tier: 1
+    enabled: true
+
+  - id: "workable_ai"
+    name: "Jobs by Workable (Remote AI & Backend)"
+    url: "https://jobs.workable.com/search?query=AI%20Engineer&remote=true"
+    ats_type: "workable"
+    tier: 1
+    enabled: true
+
+  - id: "euremotejobs_ai"
+    name: "EU Remote Jobs (EMEA Timezone)"
+    url: "https://euremotejobs.com/?s=AI+Engineer"
+    ats_type: "generic"
+    tier: 2
+    enabled: true
+
+  - id: "weworkremotely_backend"
+    name: "We Work Remotely (Backend & AI)"
+    url: "https://weworkremotely.com/remote-jobs/search?term=AI+Engineer"
+    ats_type: "generic"
+    tier: 2
+    enabled: true
+
+  - id: "dynamitejobs_dev"
+    name: "Dynamite Jobs (Remote Engineering)"
+    url: "https://dynamitejobs.com/category/development"
+    ats_type: "generic"
+    tier: 2
+    enabled: true
