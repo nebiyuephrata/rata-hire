@@ -14,8 +14,6 @@ from __future__ import annotations
 import logging
 from typing import TypeVar
 
-from google import genai
-from google.genai import types
 from pydantic import BaseModel
 
 from config.settings import settings
@@ -29,12 +27,21 @@ class GeminiClient:
     """
     Async wrapper for the Google GenAI SDK.
 
-    Initialises a single ``genai.Client`` and exposes
-    ``generate_structured`` for JSON-schema-constrained generation.
+    The underlying ``genai.Client`` is lazily initialised on first use
+    so that importing this module in tests (without an API key) does
+    not raise.
     """
 
     def __init__(self) -> None:
-        self._client = genai.Client(api_key=settings.gemini_api_key)
+        self._client = None
+
+    def _get_client(self):
+        """Lazily initialise the genai.Client on first use."""
+        if self._client is None:
+            from google import genai
+
+            self._client = genai.Client(api_key=settings.gemini_api_key)
+        return self._client
 
     async def generate_structured(
         self,
@@ -61,6 +68,8 @@ class GeminiClient:
         Raises:
             ValueError: If the response cannot be parsed into the schema.
         """
+        from google.genai import types
+
         model_name = model or settings.gemini_fast_model
 
         config = types.GenerateContentConfig(
@@ -79,7 +88,8 @@ class GeminiClient:
             temperature,
         )
 
-        response = await self._client.aio.models.generate_content(
+        client = self._get_client()
+        response = await client.aio.models.generate_content(
             model=model_name,
             contents=prompt,
             config=config,
@@ -102,5 +112,5 @@ class GeminiClient:
         return parsed
 
 
-# Module-level singleton
+# Module-level singleton (lazy — no API key needed at import time)
 gemini = GeminiClient()
